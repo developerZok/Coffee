@@ -1,0 +1,117 @@
+
+.collection__box{
+    display: flex;
+    color: var(--color-dark);
+    text-align: center;
+    flex-wrap: wrap;
+    background-image: url(../../image/collection.png);
+    background-repeat: no-repeat;
+    margin-left: 85px;
+     
+    & h2{
+        padding-bottom: 24px;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 900;
+        font-family: "Fraunces", "Arial", sans-serif;
+    }
+    & p{
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+    }
+    
+}
+
+
+.collections{
+    margin-top: 130px;
+    margin-left: 30px;
+}
+.collections::before{
+    content: " ";
+    display: block;
+    width: 255px;
+    height: 193px;
+    background-image: url(../../image/kopi1.png);
+    background-repeat: no-repeat;
+}
+.collection__text{
+    max-width: 255px;
+    margin-top: 110px;
+}
+.collection__text:not(:first-child){
+    margin-left: 30px;
+}
+.collections:nth-child(2)::before{
+    background-image: url(../../image/kopi3.png);
+}
+.collections:nth-child(3)::before{
+    background-image: url(../../image/kopi1.png);
+}
+.collections:nth-child(4)::before{
+    background-image: url(../../image/kopi3.png);
+}
+
+@media only screen and (max-width: 768px) {
+    .collection__box{
+        background-image: url(../../image/tablet-collection.png);
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-left: 0;
+    }
+
+    .collections{
+       display: flex;
+       align-items: center;
+       margin-top: 0;
+       margin-left: 97px;
+
+       &:nth-child(1){
+           margin-top: 60px;
+       }
+       &:not(:first-child){
+           padding-top: 47px;
+       }
+
+   }
+
+   .collection__text{
+       display: flex;
+       flex-direction: column;
+       text-align: start;
+       margin-top: 0;
+       margin-left: 32px;
+
+       & h2{
+           font-size: 24px;
+           line-height: 32px;
+           font-weight: 900;
+           padding-bottom: 24px;
+       }
+       & p{
+           font-size: 15px;
+           line-height: 25px;
+           font-weight: normal;
+       }
+   }
+}
+
+@media only screen and (max-width: 375px){
+    .collection__box{
+        background-image: url(../../image/phone-collection.png);
+        display: flex;
+        justify-content: center;
+        margin-left: 0;
+    }
+    .collections{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .collection__text{
+        margin-left: 0;
+        text-align: center;
+    }
+}
+

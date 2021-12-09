@@ -1,0 +1,29 @@
+.uncompromising{
+    background-color: var(--color-dark-white);
+    min-height: 474px;
+    color: var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    & h3{
+        font-size: 40px;
+        line-height: 48px;
+        font-weight: 900;
+        padding: 88px 0 80px 0;
+        font-family: "Fraunces", "Arial", sans-serif;
+    }
+    & p{
+        max-width: 540px;
+        opacity: 0.8;
+    }
+    & .mini-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.uncompromising__right--img{
+    & img{
+        border-radius: 8px;
+        position: relative;
+        top: -80px;
+    }
+}

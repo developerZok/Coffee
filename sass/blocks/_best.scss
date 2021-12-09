@@ -1,0 +1,120 @@
+.best{
+    display: flex;
+    position: relative;
+    top: -230px;
+    flex-wrap: wrap;
+}
+.best__box{
+    margin: 0 auto;
+    width: 350px;
+    height: 382px;
+    background-color: var(--color-green);
+    border-radius: 8px;
+    color: var(--color-white);
+
+    &:nth-child(2)::before{
+        background-image: url(../../image/coffee-icon-2.png);
+    }
+    &:nth-child(3)::before{
+        background-image: url(../../image/coffee-icon-3.png);
+    }
+    &::before{
+        content: " ";
+        display: block;
+        width: 72px;
+        height: 72px;
+        background-image: url(../../image/coffee-icon-1.png);
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        margin-top: 72px;
+    }
+
+    &:not(:first-child){
+        margin-left: 30px;
+    }
+
+}
+.best__text{
+    max-width: 255px;
+    text-align: center;
+    margin: 0 auto;
+    & h4{
+        text-align: center;
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 900;
+        padding: 56px 0 24px 0;
+        font-family: "Fraunces", "Arial", sans-serif;
+    }
+    & p{
+        font-size: 16px;
+        text-align: center;
+        line-height: 26px;
+        font-weight: normal;
+    }
+}
+@media only screen and (max-width: 768px){
+    .best{
+        display: flex;
+        flex-direction: column;
+    }
+    .best__box{
+        display: flex;
+        align-items: center;
+        width: 573px;
+        height: 180px;
+
+        &:not(:first-child){
+            margin: 0 auto;
+            margin-top: 24px;
+        }
+        &::before{
+            margin-top: 0;
+        }
+
+    }
+}
+
+.best__text{
+    text-align: left;
+    & h4{
+        padding: 41px 0 16px 0;
+    }
+
+    & p{
+        padding-bottom: 41px;
+    }
+}
+
+@media only screen and (max-width: 375px){
+    .best__box{
+        display: flex;
+        flex-direction: column;
+        width: 279px;
+        height: 382px;
+
+        &::before{
+            margin-top: 72px;
+            }
+        
+    }
+    .best__text{
+        text-align: center;
+    
+        & h4{
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 900;
+        }
+        & p{
+            font-size: 15px;
+            line-height: 25px;
+            font-weight: 400;
+            padding: 0 24px 0 24px;
+        }
+    }
+    .best{
+        position: relative;
+        bottom: -800px;
+    }
+}

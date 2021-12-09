@@ -1,0 +1,29 @@
+.container__hero {
+  background-image: url(../image/hero-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  border-radius: 6px;
+}
+
+.hero {
+  color: var(--color-white);
+}
+
+.hero h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 900;
+  padding: 137px 0 24px 0;
+  font-family: "Fraunces", "Arial", sans-serif;
+}
+
+.hero p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: normal;
+  max-width: 445px;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=hero.css.map */
